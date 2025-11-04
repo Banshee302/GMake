@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Davinci GMake")
+	fmt.Println("GMake")
 
 	// Load all lines from GMake
 	lines, err := os.ReadFile("GMake")
@@ -26,3 +26,4 @@ func main() {
 
 	runTask(taskName)
 }
+
