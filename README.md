@@ -41,3 +41,19 @@ task clean:
     rm -rf bin/*
 
 
+# Parrarel Execution
+
+GMake supports running Multiple Build Operations in one task for a major speed increase when it comes to building.
+
+heres a simple GMake script that Builds a GO file and uses the PARRARELL flag to run multiple build jobs in one task.
+
+$compiler = go
+
+task build:
+    PRINT = "Compiling in parallel..."
+    PARALLEL:
+        $compiler build -o bin/a.exe a.go
+        $compiler build -o bin/b.exe b.go
+        $compiler build -o bin/c.exe c.go
+    PRINT = "Build complete."
+
