@@ -1,5 +1,5 @@
 # GMake
-Lightning fast build automation system written in GO and similar to Make
+Lightning fast build automation system written in pure GO and similar to Make
 
 **It is primarily written for Windows and is tested in a Windows enviroment but does not use any kernel features so Linux SHOULD work too.**
 
